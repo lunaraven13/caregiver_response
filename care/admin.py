@@ -1,7 +1,7 @@
 from django.contrib import admin
-from care.models import Category, Page
+from care.models import Situation, Response
 
 # Register your models here.
 
-admin.site.register(Category)
-admin.site.register(Page)
+admin.site.register(Situation)
+admin.site.register(Response)
