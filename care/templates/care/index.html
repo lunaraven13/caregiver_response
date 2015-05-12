@@ -6,15 +6,20 @@
 
 <head lang="en">
     <meta charset="UTF-8">
+    <style>
+        body {text-align: center;
+            background-color: #FEF6FE;
+        font-family: "Gotham", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif}
+
+    </style>
 
     <title>Trees</title>
 </head>
 
 <body>
     <h1>Welcome to Caregiver Response</h1>
-    Hello, we are happy to help you.<br><strong>{{ boldmessage }}</strong><br />
-
-    <a href="/care/about/">About</a><br />
+    <strong>{{ boldmessage }}</strong><br />
+    <a href="/care/about/">About</a><br /> <br>
 
     <img src="{% static "images/Trees.jpg" %}" alt="Picture of Trees" />
 </body>

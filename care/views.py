@@ -13,3 +13,7 @@ def index(request):
 def about(request):
     context_dict = {'boldmessage': ""}
     return render(request, 'care/about.html', context_dict)
+
+def situation(request):
+    context_dict = {'boldmessage': "Issue?"}
+    return render(request, 'care/situation_response.html', context_dict)

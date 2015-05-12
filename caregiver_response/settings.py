@@ -18,7 +18,7 @@ print __file__
 print os.path.dirname(__file__)
 print os.path.dirname(os.path.dirname(__file__))
 
-TEMPLATE_PATH = os.path.join(BASE_DIR, 'care/templates', 'care/about.html',)
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'care/templates', 'care/about.html', 'care/situation.html',)
 
 STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
