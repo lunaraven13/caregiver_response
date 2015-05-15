@@ -18,7 +18,6 @@ print __file__
 print os.path.dirname(__file__)
 print os.path.dirname(os.path.dirname(__file__))
 
-TEMPLATE_PATH = os.path.join(BASE_DIR, 'care/templates', 'care/about.html', 'care/situation.html',)
 
 STATIC_PATH = os.path.join(BASE_DIR, 'static')
 
@@ -72,7 +71,7 @@ ROOT_URLCONF = 'caregiver_response.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/caregiver_response/templates/care',],
+        'DIRS': ['templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
