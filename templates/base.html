@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 
-{%  load staticfiles %}
+{% load staticfiles %}
 
 <html>
 
 <head lang="en">
     <meta charset="UTF-8">
+    <title> Caregiver Response </title>
     <style>
-        body {text-align: center;
+        body {
+            text-align: center;
+            font-family: "Gotham", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+            min-height: 100%;
+            display: block;
+            background: -moz-linear-gradient(#fefafa, #faa5ff 15%, #f88fff 35%);
+            padding-top: 1%;
+        }
+
+        a.button {
+            background-color: #803079;
+            color: #feeefb;
+            padding: .5em 1.5em;
+            margin: .5em;
+            border-radius: 30px;
+            width: .5px;
+        }
+        .padded {
+            font-family: "Gotham", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+            font-size: 17px;
+            border: 2px solid grey;
+            padding: 10px;
+            border-radius: 40px;
+            padding: 30px;
+            width: 700px;
+            height: 450px;
+            margin-left: 7cm;
+        }
+
+            .content {
+            height: 700px;
             background-color: #FEF6FE;
-        font-family: "Gotham", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif}
+            background: linear-gradient(#FEF6FE, #ff7dff);
+        }
+
+        .column1of3, .column2of3, .column3of3 {
+            width: 300px;
+            float: left;
+            margin: 50px;
+        }
+
+        p {
+            font-family: "Arial Black", Gadget, sans-serif;
+            background-color: #ffa7f7;
+        }
+
+        .content p {
+            border: 1px solid gray;
+            padding: 5%;
+            margin: 7%;
+            background-color: #fad7ff;
+
+
+        }
+
+        .content .leader {
+            font-weight: bold;
+        }
+
+        .content .follower {
+            display: none;
+            padding: 1em;
+        }
+
+        .content span:hover ~ .follower {
+            display: block;
+        }
 
     </style>
-
-    <title>Trees</title>
 </head>
 
-<body></html>
+<body>
+<a href="{% url 'about' %}" class="button">About</a>
+    <a href="/care/situation_response/" class="button">Situation and Response</a><br /><br>
 {% block body_block %}
 {% endblock %}
-
-
-
-    <meta charset="UTF-8">
-    <title> Caregiver Response </title>
-</head>
-<body>
-
-
-
-
-
 </body>
 </html>
 

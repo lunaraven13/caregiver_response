@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Situations and Responses</title>
-
-    <h1>Situations and Responses</h1>
-<body class="content">
+{% extends "base.html" %}
+{% load static %}
+{% block body_block %}
+    <div class="content">
 <div class="column1of3">
     <h3>Anger/Violence</h3>
     <ol>
@@ -100,56 +96,6 @@
                  </li>
     </ol>
 </div>
-</head>
-
-<body>
-<style>
-    .column1of3, .column2of3, .column3of3 {
-        width: 300px;
-        float: left;
-        margin: 50px;
-    }
-
-    h1 {
-        text-align: center;
-        color: #051a8b;
-    }
-
-    body {
-        background-color: #FEF6FE;
-        display: block;
-        background: linear-gradient(#FEF6FE, #faa5ff);
-    }
-
-    p {
-        font-family: "Arial Black", Gadget, sans-serif;
-        background-color: #ffa7f7;
-    }
-
-    .content p {
-        border: 1px solid gray;
-        padding: 5%;
-        margin: 7%;
-
-    }
-
-    .content .leader {
-        font-weight: bold;
-    }
-
-    .content .follower {
-        display: none;
-    }
-
-    .content span:hover ~ .follower {
-        display: block;
-        background-color: #fdf4ff;
-    }
-
-</style>
-
-</body>
-</html>
-
-
+    </div>
+{% endblock %}
 
