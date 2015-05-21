@@ -7,6 +7,9 @@
           <mappings>
             <mapping deploy="/test_site.com/testproject" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/test_site.com/testproject/templates" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
