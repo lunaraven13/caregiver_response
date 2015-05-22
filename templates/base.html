@@ -14,20 +14,21 @@
             font-family: 'Muli', serif;
             min-height: 100%;
             display: block;
-            background: -moz-linear-gradient(#fedffa, #faa5ff 15%, #f88fff 35%);
+            background: linear-gradient(#fedffa, #faa5ff 15%, #f88fff 35%);
             padding-top: 1%;
         }
 
         a.button {
             background-color: #803079;
             color: #feeefb;
-            padding: .5em 1.5em;
+            padding: .5em .5em;
             margin: .5em;
-            border-radius: 25px;
-            width: .5px;
+            border-radius: 2px;
+            width: 15%;
+            display: inline-block;
         }
         .padded {
-            font-family: "Gotham", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+            font-family: 'Muli', serif;
             font-size: 17px;
             border: 2px solid grey;
             padding: 10px;
@@ -41,7 +42,7 @@
             .content {
             height: 700px;
             background-color: #FEF6FE;
-            background: linear-gradient(#FEF6FE, #ff7dff);
+            background: linear-gradient(#FEF6FE, #ff7dff,);
         }
 
         .column1of3, .column2of3, .column3of3 {
@@ -51,7 +52,7 @@
         }
 
         p {
-            font-family: "Arial Black", Gadget, sans-serif;
+            font-family: 'Muli', serif;
             background-color: #ffa7f7;
         }
 
@@ -80,9 +81,11 @@
 </head>
 
 <body>
+<div a.button>
 <a href="{% url 'about' %}" class="button">About</a>
     <a href="/care/situation_response/" class="button">Situation and Response</a><br /><br>
-    <a href="/care/webform/" class="button">webform</a><br /><br>
+    <a href="/care/webform/" class="button">Webform</a><br /><br>
+</div>
 {% block body_block %}
 {% endblock %}
 </body>
