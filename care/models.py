@@ -21,4 +21,10 @@ class Response(models.Model):
     views = models.IntegerField(default=0)
 
     def __unicode__(self):
+        return self.name
+
+class webform(models.Model):
+    webform = models.CharField(max_length=140)
+
+    def __unicode__(self):
         return self.answer
