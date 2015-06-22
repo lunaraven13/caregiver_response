@@ -20,6 +20,7 @@
             padding: 0;
             font-family: 'Muli', serif;
             font-weight: bold;
+            background: linear-gradient(#fedffa, #faa5ff 15%, #f88fff 50%);
         }
 
         div#envelope {
@@ -145,16 +146,27 @@
 
 </head>
 <body>
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
 <div id="envelope">
-    <form action="" method="post">
+    <form name="caregiverResponse">
+    <form action="demo_form.asp" onsubmit="return validateForm()" method="post">
         <header>
             <h2>Caregiver Responsive Form</h2>
 
             <p>Questions? Tips? We love to hear from you!</p>
         </header>
-        <label>Your Name</label>
-        <input name="name" placeholder="Sarah Jane Smith" type="text" width="100px;">
-        <label>Email Id</label>
+        <label>Name</label>
+        <input name="name" placeholder="Sarah Jane Smith" type="text" width="100px;" required>
+        <label>Email</label>
         <input name="email" placeholder="yourname@gmail.com" type="text">
         <label>Message</label>
 <textarea cols="15" name="message" placeholder="Message" rows="10">
@@ -163,6 +175,5 @@
     </form>
 </div>
 </body>
-</html>
 
 {#http://www.formget.com/how-to-make-simple-responsive-form-for-a-website/##}

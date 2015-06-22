@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="caregiver_responsedemo">
-    <serverData>
-      <paths name="caregiver_responsedemo">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/test_site.com/testproject" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath path="/test_site.com/testproject/templates" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-    </serverData>
-  </component>
+  <component name="PublishConfigData" serverName="caregiver_responsedemo" />
 </project>

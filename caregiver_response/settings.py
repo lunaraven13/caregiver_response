@@ -71,7 +71,7 @@ ROOT_URLCONF = 'caregiver_response.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/'],
+        'DIRS': ['/home/ubuntu/test_site.com/testproject/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
