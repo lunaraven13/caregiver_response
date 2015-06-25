@@ -18,5 +18,7 @@ def situation(request):
     return render(request, 'care/situation_response.html', context_dict)
 
 def webform(request):
+    if request.POST:
+        print request.POST
     context_dict = {'boldmessage': "Webform"}
     return render(request, 'care/webform.html', context_dict)
