@@ -1,2 +1,2 @@
 # caregiver_response
-This is my current project for code school. The idea is to create a response app for dementia caregivers.
+This was my capstone project for code school. The idea was to create a response app for dementia caregivers, and now I want to make it even better.
